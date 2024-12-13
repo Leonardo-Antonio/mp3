@@ -9,7 +9,7 @@
 ## Configuración
 - Bajar el repositorio
 ```bash
-git clone https://github.com/Leonardo-Antonio/playlist.git
+git clone https://github.com/Leonardo-Antonio/mp3.git
 ```
 - Instalar dependencias
 ```bash
