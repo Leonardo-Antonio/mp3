@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - GO_ENV=production
+    volumes:
+      - /music:/music  # Asegúrate de reemplazar '/host/music' con la ruta de tu directorio de música en el host
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
